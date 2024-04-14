@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+</head>
+<body>
+    <h1>Capture Photos</h1>
+    <form action="/capture" method="POST">
+        <label for="subject_name">Subject Name:</label>
+        <input type="text" id="subject_name" name="subject_name" required><br><br>
+        <label for="num_photos">Number of Photos:</label>
+        <input type="number" id="num_photos" name="num_photos" min="1" value="5"><br><br>
+        <input type="submit" value="Capture Photos">
+    </form>
+    <hr>
+    <h1>Recognize Faces</h1>
+    <form action="/recognize" method="POST">
+        <input type="submit" value="Start Recognition">
+    </form>
+</body>
+</html>
